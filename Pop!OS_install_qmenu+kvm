@@ -1,0 +1,27 @@
+
+
+sudo apt install virt-manager qemu-vkm
+
+reboot
+
+sudo systemctl status libvirtd
+
+#########################################
+
+uname -a
+
+sudo apt install linux-headers-5.11.0-7614-generic
+REPLACE linux-headers-5.11.0-7614-generic by your result for me is
+
+tux@pop-os:~$ uname -a
+Linux pop-os 5.11.0-7614-generic #15~1618626693~20.10~ecb25cd-Ubuntu SMP Thu Apr 22 16:00:45 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+#########################################
+
+tux@pop-os:~$ sudo usermod -a -G libvirt tux
+
+
+REPLACE TUX BY YOUR USERNAME UP
+#########################################
+
+is done !!
